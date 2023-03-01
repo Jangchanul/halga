@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <title>할까말까</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script  src="https://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+   	<header>
+   	    <div class="hd_back2">
+   	        <a href="javascript:history.back(-1)" class="back"></a>
+            <p class="hd_title">글쓰기</p>
+   	    </div>
+   	</header>
+    <section id="employer">
+        <div class="inner16">
+            <h2 style="font-size: 5.555vw;">게시할 글의 내용을 입력해주세요.</h2>
+            <div class="empr_cont empr_con2">
+                <input type="text" class="empr_input" placeholder="제목을 입력 하세요">
+            </div>
+
+            <div class="empr_ta_box">
+                <p class="empr_c_title">내용</p>
+                <p class="empr_c_title empr_c_title2">* 악성, 범죄등 윤리적으로 어긋나는 요청은 금지합니다.</p>
+                <textarea onkeyup="this.style.height='26px'; this.style.height = this.scrollHeight + 'px';" placeholder="내용을 입력 하세요."></textarea>
+            </div>
+
+            <div class="empr_ta_box">
+                <p class="empr_c_title" style="margin-bottom:3.333vw;">사진 첨부하기</p>
+                <p class="empr_c_title empr_c_title2" style="margin-bottom: 3.333vw;">* 10MB이하, 3장까지 업로드 가능합니다.</p>
+                <div class="bw_file_wrap">
+                    <input type="file" accept="images/*" id="bw_file">
+                    <label for="bw_file"></label>
+                    <div class="bw_photo"><img src="img/mt2_img.png"></div>
+                    <div class="bw_photo"><img src="https://via.placeholder.com/73x73" alt=""></div>
+                </div>
+            </div>
+
+            <div class="empr_ta_box flese2">
+                <p class="empr_c_title">해시태그 등록</p>
+                <p class="empr2_ta_txt1">* 태그1|태그2|태그3....</p>
+                <div class="flex flese">
+                    <input type="text" placeholder="해시태그를 입력 하세요">
+                    <button class="plus">추가하기</button>
+                </div>
+            </div>
+            <ul class="hash">
+                <li>#123</li>
+                <li>#123</li>
+                <li>#123</li>
+                <li>#123</li>
+            </ul>
+            <button type="button" class="write_sue">완료</button>
+        </div>
+    </section>
+
+    
+    <div class="trick"></div>
+
+    <footer>
+        <ul class="footer_ul">
+            <li class="f_active"><a href="#">일하기</a></li>
+            <li><a href="#">일 시키기</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
+

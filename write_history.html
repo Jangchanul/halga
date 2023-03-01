@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <title>할까말까</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script  src="https://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/script.js"></script>
+    <style type="text/css">
+        section#history>.inner16{padding-top: 0;}
+        .history_ul>li{background:none;border-bottom: 1px solid #ccc !important;;}
+        .history_ul ul li{color: #bbbaba !important;text-decoration: underline;}
+        .history_ul .hu_title{margin-bottom: 0;}
+    </style>
+</head>
+<body>
+   	<header>
+   	    <div class="hd_back2">
+   	        <a href="javascript:history.back(-1)" class="back"></a>
+            <p class="hd_title">내 작성 내역</p>
+   	    </div>
+   	</header>
+    <section id="history">
+        <div class="inner16">
+            <ul class="alarm_tab_top" style="border:none">
+                <li class="tab1 tab_active" rel="tab1">
+                    <a href="javascript:;">자유게시판</a>
+                </li>
+                <li class="tab2" rel="tab2">
+                    <a href="javascript:;">후기</a>
+                </li>
+            </ul>
+
+            <div class="alarm_tab">
+                <div id="tab1" class="tab_content">
+                    <ul class="my_board">
+                        <li>
+                            <p style="color: #888;">2021-09-01</p>
+                            <p style="font-size: 4.444vw;">내가 작성한 자유게시판 게시글 제목이 표시</p>
+                        </li>
+                        <li>
+                            <p style="color: #888;">2021-09-01</p>
+                            <p style="font-size: 4.444vw;">내가 작성한 자유게시판 게시글 제목이 표시</p>
+                        </li>
+                    </ul>
+                </div><!------------------------------------------------------------------------------------tab1----->
+                
+                <div id="tab2" class="tab_content" style="display:none;">
+                    <ul class="my_review">
+                        <li>
+                            <div class="info">
+                                <p>후기작성자 닉네임</p>
+                                <p style="font-size: 3.333vw;">2021-06-30</p>
+                            </div>
+                            <figure class="star"><img src="./img/star.png" alt=""></figure>
+                            <div class="user_review">
+                                <img src="./img/mt2_img.png" alt="">
+                                <p style="font-size: 3.333vw;">작성후기가 표시됩니다.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="info">
+                                <p>후기작성자 닉네임</p>
+                                <p style="font-size: 3.333vw;">2021-06-30</p>
+                            </div>
+                            <figure class="star"><img src="./img/star.png" alt=""></figure>
+                            <div class="user_review">
+                                <img src="./img/mt2_img.png" alt="">
+                                <p style="font-size: 3.333vw;">작성후기가 표시됩니다.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+

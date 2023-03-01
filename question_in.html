@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <title>할까말까</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <script  src="https://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="./js/script.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <style>
+        .swiper {
+          width: 100%;
+          height: 100%;
+        }
+  
+        .swiper-slide {
+          background: url(https://via.placeholder.com/328x140);
+          width: 100%;
+          height: 38.888vw;
+  
+          /* Center slide text vertically */
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
+        }
+
+        .ddre{width: 92%;margin: 0px auto;}
+        .ddre>div{margin-bottom: 5vw;;}
+
+        .vvfd{width: 100%;min-height: 23.888vw;background: #f1f1f5;border-radius: 2.333vw;box-sizing: border-box;padding: 4.444vw;;}
+        .ddre2{border-top: 1px dotted #ccc;}
+        .ddre2 h3{color: #ea4335;}
+
+      </style>
+</head>
+<body>
+   	<header class="hds">
+   	    <div class="hd_back2">
+   	        <a href="javascript:history.back(-1)" class="back"></a>
+            <p class="hd_title">상세보기</p>
+   	    </div>
+   	</header>
+
+    <div class="ddre">
+        <div>
+            <p>입력된 문의제목</p>
+            <p class="date_p">2021-08-20 8:30</p>
+        </div>
+        <div class="swiper mySwiper" style="overflow: hidden;position: relative;">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+      
+          <!-- Swiper JS -->
+          <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      
+          <!-- Initialize Swiper -->
+          <script>
+            var swiper = new Swiper(".mySwiper", {
+                spaceBetween: 30,
+              pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+              },
+            });
+          </script>
+        <div class="vvfd">입력된 문의 내용</div>
+    </div>
+    <div class="ddre ddre2">
+        <h3>확인중</h3>
+        <p>아직 문의 내역에 대해서 확인중입니다.</p>
+    </div>
+
+</body>
+</html>
+

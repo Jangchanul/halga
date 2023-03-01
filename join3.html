@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <title>할까말까</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script  src="https://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+   	<header>
+   	    <div class="hd_back">
+   	        <a href="javascript:history.back(-1)" class="back"></a>
+   	    </div>
+   	</header>
+    <section id="join">
+        <div class="inner16">
+            <p class="join_title">사용할 프로필을 입력하세요.</p>
+            
+            <div class="log_id_wrap">
+                <input type="text" placeholder="사용할 닉네임을 입력해주세요.">
+                <p class="disc">* 이미 등록되어 있는 닉네임 입니다.</p>
+            </div>
+            <p class="join3_txt">프로필 이미지를 선택해주세요.(선택)</p>
+
+            <input type="file" accept="images/*" id="join3_file" style="display:none">
+            <label for="join3_file" class="join3_file">추가하기</label>
+
+            <div class="join3_pf_wrap">
+                <div class="join3_pf_imgbox">
+                    <img src="img/male.png">
+                </div>
+            </div>
+            
+            <button type="button" class="login_btn">입력하기</button>
+        </div>
+    </section>
+    
+    <div class="dim"></div>
+    <div class="join_slide">
+        <input type="checkbox" id="join_all">
+        <label for="join_all"><span></span>모두 동의하기</label>
+        <input type="checkbox" id="join_chk1" class="join_chk">
+        <label for="join_chk1"><span></span>서비스 이용약관 (필수)</label>
+        <input type="checkbox" id="join_chk2" class="join_chk">
+        <label for="join_chk2"><span></span>개인정보 수집 및 이용 (필수)</label>
+        <input type="checkbox" id="join_chk3" class="join_chk">
+        <label for="join_chk3"><span></span>위치정보 수집 및 이용 (필수)</label>
+        <input type="checkbox" id="join_chk4" class="join_chk">
+        <label for="join_chk4"><span></span>만 14세 이상 (필수)</label>
+        <input type="checkbox" id="join_chk5" class="join_chk">
+        <label for="join_chk5"><span></span>불법행위 책임은 이용자에게 있습니다 (필수)</label>
+        <input type="checkbox" id="join_chk6" class="join_chk">
+        <label for="join_chk6"><span></span>마케팅 정보 수신 동의 (선택)</label>
+        
+        <button type="button" disabled onclick="location.href='join_f.html'">동의하고 시작하기</button>
+    </div>
+</body>
+</html>
+
+<script>
+    $(document).ready(function () {
+        $("#join_all").click(function(){
+            if($("#join_chk1, #join_chk2, #join_chk3, #join_chk4, #join_chk5").is(":checked")){
+                $(".join_slide button").prop("disabled",false);
+            }else{
+                $(".join_slide button").prop("disabled",true);
+            }
+        });
+    })
+</script>

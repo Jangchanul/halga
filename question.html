@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <title>할까말까</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script>
+        function setThumbnail(event) {
+            for (var image of event.target.files) {
+                var reader = new FileReader();
+                reader.onload = function (event) {
+                    var img = document.createElement("img");
+                    img.setAttribute("src", event.target.result);
+                    document.querySelector("div#image_container").appendChild(img);
+                };
+                console.log(image);
+                reader.readAsDataURL(image);
+            }
+        }
+    </script>
+</head>
+<body>
+    <header class="hds">
+        <div class="hd_back2">
+            <a href="javascript:history.back(-1)" class="back"></a>
+            <p class="hd_title">문의하기</p>
+            <button type="button" onclick="location.href='./question_list.html'"></button>
+        </div>
+    </header>
+
+    <ul class="que_ul">
+        <li style="border-bottom: 1px dashed #ccc;padding: 6.667vw 0;margin-bottom: 6.667vw;color: #2277f2;">문의 내역은 이 곳에서 확인할 수 있습니다.</li>
+        <li>
+            <input type="text" placeholder="문의할 글의 제목을 입력 해주세요." style="border-bottom:1px solid #ccc;">
+        </li>
+        <li>
+            <textarea placeholder="문의할 내용을 입력해주세요.&#13;&#10;문의 내용에 대한 답변은 계정에 등록된 전화번호, 이메일로 발송됩니다. "></textarea>
+        </li>
+        <li>
+            <p style="color: #767676;font-size: 4.444vw;margin-bottom: 2.222vw;">사진첨부하기</p>
+            <p style="color: #ea4335;font-size: 3.333vw;margin-bottom: 4.444vw;">10MB이하, 3장까지 업로드 가능합니다.</p>
+            <input type="file" id="image" accept="image/*" onchange="setThumbnail(event);" multiple />
+            <div>
+                <label for="image"><img src="./img/img_plus.png" alt=""></label>
+                <div id="image_container"></div>
+            </div>
+        </li>
+        <li>
+            <p style="color: #191919;font-size: 5vw;padding: 2.222vw 0;border-bottom: 1px solid;margin-bottom: 3.889vw;">확인해주세요.</p>
+            <p style="color: #767676;font-size: 3.333vw;margin-bottom: 4.444vw;">앱 이용에 문제가 생겼을 시, 문의 및 신고하기에 글을 작성해주세요. 원활한 업무처리를 위해 사실 그대로 자세히 작성해주시길 바랍니다.</p>
+            <p style="color: #191919;font-size: 3.333vw;margin-bottom: 8.333vw;">사건 처리에는 1-2주가 소요됩니다.</p>
+            <button>문의하기</button>
+        </li>
+    </ul>
+</body>
+
+</html>

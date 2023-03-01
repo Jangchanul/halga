@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <title>할까말까</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="hd_back2">
+            <a href="javascript:history.back(-1)" class="back"></a>
+            <p class="hd_title">자유게시판</p>
+            <div class="chat"></div>
+        </div>
+    </header>
+
+    <section id="board">
+        <a href="#board" class="top"><img src="./img/top.png" alt=""></a>
+        <div class="board_item">
+            <div>
+                <div><button type="button" class="board_ser_bt"><img src="./img/bor_ic1.png" alt="검색"></button></div>
+                <div><button type="button" onclick="location.href='board_write2.html'"><img src="./img/bor_ic2.png" alt="글쓰기"></button></div>
+            </div>
+            <div class="boart_filter">
+                <div>
+                    <select name="" id="">
+                        <option value="">전체</option>
+                        <option value="">서울</option>
+                        <option value="">인천</option>
+                        <option value="">경기</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        
+        <div class="ser_jq">
+            <div class="list_search_wrap">
+                <button type="button" class="board_close"></button>
+                <input type="text" placeholder="검색어를 입력 하세요">
+                <button type="button" class="board_serch"></button>
+            </div>
+        </div>
+        
+        
+        
+        <script type="text/javascript">
+                $(function(){
+                   $('.board_ser_bt').click(function(){
+                       $('.ser_jq').slideToggle(200);
+                   }) ;
+                    $('.board_close').click(function(){
+                        $('.list_search_wrap>input').val('');
+                    });
+                });
+            </script>
+
+        <div class="inner16 board_list_1">
+            <ul class="bl_ul">
+                <li><a href="board_view.html">
+                        <div class="bl_top">
+                            <p class="bl_title">자유게시판 제목입니다.</p>
+                        </div>
+                        <div class="bl_bottom">
+                            <p class="bl_art">자유게시판 내용입니다</p>
+                        </div>
+                        <p class="bl_time">2021.09.09</p>
+                        <div class="flex flex2">
+                            <div class="bl_like bl_zzim">24</div>
+                            <div class="bl_like">84</div>
+                            <div class="bl_like bl_view">24</div>
+                            <div class="bl_comment">12</div>
+                        </div>
+                    </a></li>
+                <li><a href="board_view.html">
+                        <div class="bl_top">
+                            <p class="bl_title">자유게시판 제목입니다.</p>
+                        </div>
+                        <div class="bl_bottom">
+                            <p class="bl_art">자유게시판 내용입니다</p>
+                        </div>
+                        <p class="bl_time">2021.09.09</p>
+                        <div class="flex flex2">
+                            <div class="bl_like bl_zzim">24</div>
+                            <div class="bl_like">84</div>
+                            <div class="bl_like bl_view">24</div>
+                            <div class="bl_comment">12</div>
+                        </div>
+                    </a></li>
+                <li><a href="board_view.html">
+                        <div class="bl_top">
+                            <p class="bl_title">자유게시판 제목입니다.</p>
+                        </div>
+                        <div class="bl_bottom">
+                            <p class="bl_art">자유게시판 내용입니다</p>
+                        </div>
+                        <p class="bl_time">2021.09.09</p>
+                        <div class="flex flex2">
+                            <div class="bl_like bl_zzim">24</div>
+                            <div class="bl_like">84</div>
+                            <div class="bl_like bl_view">24</div>
+                            <div class="bl_comment">12</div>
+                        </div>
+                    </a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <ul class="footer_ul">
+            <li class=""><a href="#">일하기</a></li>
+            <li><a href="#">일 시키기</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

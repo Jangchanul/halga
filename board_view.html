@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <title>할까말까</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<header>
+    <div class="hd_back2">
+        <a href="javascript:history.back(-1)" class="back"></a>
+        <p class="hd_title">자유게시판</p>
+        <div class="chat"></div>
+    </div>
+</header>
+<body>
+    <div class="board_dim">
+        <div>
+            <p>해당 유저를 신고 하시겠습니까?</p>
+            <ul>
+                <li>네</li>
+                <li>아니요</li>
+            </ul>
+        </div>
+    </div>
+
+    <section id="main_view">
+        <div class="inner16">
+
+            <script type="text/javascript">
+                $(function () {
+                    $('.hd_report').click(function () {
+                        $('.mv_cont1>button').slideToggle(50);
+                    });
+
+                    $('.mv_report').click(function () {
+                        $('.board_dim').fadeIn(100);
+                    });
+
+                    $('.mv_like_im').click(function () {
+                        var clicks = $(this).data('clicks');
+                        if (clicks) {
+                            $(this).children('img').attr("src", "./img/mv_like_on.png");
+                        } else {
+                            $(this).children('img').attr("src", "./img/mv_like_off.png");
+                        }
+                        $(this).data("clicks", !clicks);
+                    });
+                });
+            </script>
+
+            <ul class="mv_my">
+                <li class="mv_profile" style="background: url(https://via.placeholder.com/56x56);"></li>
+                <li class="mv_user">
+                    <p>작성자 닉네임<span class="mv_box"><img src="./img/ss1.png" alt=""><img src="./img/mt2_icon1.png" alt=""></span></p>
+                    <p>서울 광역시 마포구<span class="mv_time">09/01 17:10</span></p>
+                </li>
+            </ul>
+
+            <div class="mv_cont2">
+                <p class="mv_cont_title">제목표시</p>
+
+                <div class="swiper mySwiper" style="margin-bottom: 5.555vw;">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/328x140" alt=""></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/328x140" alt=""></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/328x140" alt=""></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <!-- Swiper JS -->
+                <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper(".mySwiper", {
+                        pagination: {
+                            el: ".swiper-pagination",
+                            type: "fraction",
+                        },
+                        spaceBetween: 10,
+                    });
+                </script>
+
+                <p class="mv_cont_art">내용</p>
+
+                <ul class="mv_tag">
+                    <li><a href="#">해시태그</a></li>
+                    <li><a href="#">해시태그</a></li>
+                    <li><a href="#">해시태그</a></li>
+                    <li><a href="#">해시태그</a></li>
+                </ul>
+
+                <ul class="bor_are">
+                    <li>
+                        <div class="board_zzim"></div>
+                        <p>99+</p>
+                    </li>
+                    <li>
+                        <div class="board_view"></div>
+                        <p>99+</p>
+                    </li>
+                    <li>
+                        <div class="board_det"></div>
+                        <p>99+</p>
+                    </li>
+                </ul>
+            </div>
+
+            <li class="mv_zl">
+                <div>
+                    <div class="mv_zzim">
+                        <span></span>
+                        <div>찜하기</div>
+                    </div>
+                    <div class="mv_likes">
+                        <input type="checkbox" id="hash_bt">
+                        <label for="hash_bt">좋아요</label>
+                    </div>
+                </div>
+                <button type="button" class="rep_bts"><img src="./img/rept.png" alt="게시글 신고하기"></button>
+            </li>
+
+            <div class="mv_com_inp">
+                <textarea name="" id="" cols="30" rows="10" placeholder="댓글입력"></textarea>
+                <button type="button">입력</button>
+            </div>
+
+            <ul class="mv_comment_ul">
+                <li>
+                    <div class="mv_com_pf"><img src="./img/ham_img.png"></div>
+                    <div class="mv_com_right">
+                        <div class="mv_com_top">
+                            <p class="mv_com_id">김옥자22</p>
+                            <p class="mv_time">2021.06.30</p>
+                        </div>
+                        <div class="mv_com_art">댓글 내용입니다.</div>
+                        <div class="mv_com_mid">
+                            <button type="button" class="like">2</button>
+                            <button type="button" class="more_com">댓글달기</button>
+                        </div>
+                        <textarea name="" id="" cols="30" rows="10" class="my_com_text"></textarea>
+                        <div>
+                            <button type="button" class="mv_com_view" onclick="location.href='mv_comment.html'">답글
+                                <span>1</span>개</button>
+                            <button type="button" class="mv_report"><img src="./img/rept.png" alt=""></button>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="mv_com_pf"><img src="./img/ham_img.png"></div>
+                    <div class="mv_com_right">
+                        <div class="mv_com_top">
+                            <p class="mv_com_id">김옥자22</p>
+                            <p class="mv_time">2021.06.30</p>
+                        </div>
+                        <div class="mv_com_art">댓글 내용입니다.</div>
+                        <div class="mv_com_mid">
+                            <button type="button" class="like">2</button>
+                            <button type="button" class="more_com">댓글달기</button>
+                        </div>
+                        <div>
+                            <button type="button" class="mv_com_view" onclick="location.href='mv_comment.html'">답글
+                                <span>1</span>개</button>
+                            <button type="button" class="mv_report"><img src="./img/rept.png" alt=""></button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <button type="button" class="plus_re">+ 더보기</button>
+        </div>
+
+        <button type="button" class="top" onclick="location.href='#main_view'">
+            <img src="./img/top.png" id="btn_top">
+        </button>
+    </section>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+
+</html>

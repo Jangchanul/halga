@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <title>할까말까</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script  src="https://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+   	<header>
+   	    <div class="hd_back">
+   	        <a href="javascript:history.back(-1)" class="back"></a>
+   	    </div>
+   	</header>
+    <section id="join">
+        <div class="inner16">
+            <p class="join_title" style="margin-bottom:6.667vw">회원가입</p>
+
+            <p class="join_txt2">회원가입엔 본인 인증이 필요합니다. 해당하는 버튼을 눌러 본인인증을 완료해주세요.</p>
+            
+            <button type="button" class="login_btn" onclick="location.href='join2.html'">본인인증 하러가기</button>
+        </div>
+    </section>
+</body>
+</html>
+
+<!-- <script>
+    $(document).ready(function () {
+        $("#join_all").click(function(){
+            if($("#join_chk1, #join_chk2, #join_chk3, #join_chk4, #join_chk5").is(":checked")){
+                $(".join_slide button").prop("disabled",false);
+            }else{
+                $(".join_slide button").prop("disabled",true);
+            }
+        });
+    })
+</script> -->

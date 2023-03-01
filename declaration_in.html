@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <title>할까말까</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <style>
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #000;
+        }
+        .swiper-button-next{width: 10.556vw;height: 2.778vw;margin: 0;}
+        .swiper-button-prev{width: 10.556vw;height: 2.778vw;margin: 0;}
+        .swiper-button-next::after{display: none;}
+        .swiper-button-prev::after{display: none;}
+    </style>
+</head>
+
+<body>
+    <header class="hds">
+        <div class="hd_back2">
+            <a href="javascript:history.back(-1)" class="back"></a>
+            <p class="hd_title">상세보기</p>
+        </div>
+    </header>
+    <div class="declaration_in">
+        <div class="dec_top">
+            <p>신고유형</p>
+            <div class="top_box">사기,거짓</div>
+            <p>신고대상의 이메일</p>
+            <div class="top_box">badguy@email.com</div>
+        </div>
+        <div class="dec_mid">
+            <div class="mid_box">작성된 사건 경위</div>
+            <div class="mid_box1">
+                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <!-- Required swiper-lazy class and image source specified in data-src attribute -->
+                            <img data-src="http://via.placeholder.com/328x121" class="swiper-lazy" />
+                            <!-- Preloader image -->
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <!-- Required swiper-lazy class and image source specified in data-src attribute -->
+                            <img data-src="http://via.placeholder.com/328x121" class="swiper-lazy" />
+                            <!-- Preloader image -->
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <!-- Required swiper-lazy class and image source specified in data-src attribute -->
+                            <img data-src="http://via.placeholder.com/328x121" class="swiper-lazy" />
+                            <!-- Preloader image -->
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <!-- Swiper JS -->
+                <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper(".mySwiper", {
+                        lazy: true,
+                        pagination: {
+                            el: ".swiper-pagination",
+                            clickable: true,
+                        },
+                        navigation: {
+                            nextEl: ".swiper-button-next",
+                            prevEl: ".swiper-button-prev",
+                        },
+                    });
+                </script>
+            </div>
+        </div>
+        <div class="dec_bot">
+            <p class="strong">확인중</p>
+            <p class="small">해당 문의내역에 대해서 확인 중에 있습니다.</p>
+        </div>
+    </div><!-- declaration_in -->
+</body>
+
+</html>

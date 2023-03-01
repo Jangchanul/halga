@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <title>할까말까</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script  src="https://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+   	<header>
+   	    
+   	</header>
+    <section id="login">
+        <div class="inner16">
+            <div class="logo"><img src="./img/logo.png"></div>
+
+            <div class="log_id_wrap">
+                <input type="text" placeholder="email를 입력해주세요.">
+                <p class="disc">* 이메일을 확인해주세요.</p>
+            </div>
+            <div class="log_pw_wrap">
+                <input type="password" placeholder="비밀번호를 입력해주세요.">
+                <button type="button" class="log_pw_btn"></button>
+                <p class="disc">* 비밀번호를 확인해주세요.</p>
+            </div>
+
+            <div class="login_chk_wrap">
+                <div class="id_chk">
+                    <input type="checkbox" id="id_chk" checked>
+                    <label for="id_chk"><span></span>아이디 저장</label>
+                </div>
+
+                <div class="auto_login">
+                    <input type="checkbox" id="auto_login">
+                    <label for="auto_login"><span></span>자동 로그인</label>
+                </div>
+            </div>
+
+            <button type="button" class="login_btn" onclick="location.href='employee.html'">로그인</button>
+            <button type="button" class="join_btn" onclick="location.href='join1.html'">회원가입</button>
+            <div class="flex" style="width:55vw;margin:0 auto;">
+                <button type="button" class="find_btn" onclick="location.href='find_id1.html'">아이디/</button>
+                <button type="button" class="find_btn" onclick="location.href='find_pw1.html'">비밀번호 가 기억나지 않으세요?</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+

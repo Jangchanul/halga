@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <title>할까말까</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script  src="https://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="/js/script.js"></script>
+    <style type="text/css">
+        .mp_photo{margin: 0 auto 6vw;}
+        .mp_ul li input{display: block;border: none;;}
+        .mp_lls{display: flex;justify-content: space-between;background: none !important;border:1px solid #ccc;border-radius: 1.111vw;margin: 4.444vw 0;overflow: hidden;}
+        .mp_ul li button{background: #4285f4;color: #fff;width: 28%;}
+    </style>
+    <script type="text/javascript">
+        $(function(){
+            $('.ull2').click(function(){
+                $('.mp_lls').slideToggle();
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <div class="set_dim">
+        <div>
+            <p>로그아웃 하시겠습니까?</p>
+            <ul>
+                <li>확인</li>
+                <li class="set_d_c">취소</li>
+            </ul>
+        </div>
+    </div>
+
+   	<header>
+   	    <div class="hd_back2">
+   	        <a href="javascript:history.back(-1)" class="back"></a>
+            <p class="hd_title">회원정보 확인, 변경</p>
+   	    </div>
+   	</header>
+    <section id="mypage">
+        <div class="inner16">
+            <div class="mp_photo">
+                <img src="img/ham_img.png">
+            </div>
+            <div>
+                <p class="mp_t1">김옥자</p>
+                <p class="mp_email">email@email.com</p>
+            </div>
+
+            <ul class="mp_ul ull2">
+                <li><a href="javascript:;">
+                    이메일 변경
+                </a></li>
+                <li class="mp_lls">
+                    <input type="text" placeholder="인증번호 입력">
+                    <button type="button">인증하기</button>
+                </li>
+                <li><a href="phone_mod.html">
+                    비밀번호 변경
+                </a></li>
+            </ul>
+            <button type="button" class="mp_logout set_d_o">로그아웃</button>
+        </div>
+    </section>
+</body>
+</html>
+

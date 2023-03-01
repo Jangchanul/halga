@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <title>할까말까</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script  src="https://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+   	<header>
+   	    <div class="hd_back2">
+   	        <a href="javascript:history.back(-1)" class="back"></a>
+   	    </div>
+   	</header>
+    <section id="ev_accept">
+        <div class="inner16">
+            <div class="mv_cont1">
+                <p class="ev_accept_txt1">수락하기</p>
+            </div>
+
+            <p class="ev_accept_txt2">해당 일을 수락합니다. 게시 조건을 확인해주세요.</p>
+
+            <div class="mv_cont2">
+                <p class="ev_accept_txt3">내용</p>
+
+                <div class="swiper-container mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/ev_img.png"></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/328x140" alt=""></div>
+                        <div class="swiper-slide"><img src="https://via.placeholder.com/328x140" alt=""></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <p class="mv_cont_art">언니들! 친구집인척 함께 사진한장만 찍어주세요ㅠㅠㅠ//게시물 내용 입니다.</p>
+            </div>
+
+            <div class="mv_cont3">
+                <p class="ev_accept_txt3">조건</p>
+                <ul class="terms">
+                    <li>지불할 금액</li>
+                    <li><span>10,000</span>원</li>
+                </ul>
+                <ul class="terms">
+                    <li>위치</li>
+                    <li>주소광역시 주소구 주소동 111-20</li>
+                </ul>
+                <ul class="terms">
+                    <li>시간</li>
+                    <li>2021.08.20 16:00</li>
+                </ul>
+            </div>
+
+            <input type="checkbox" id="ev_act_chk">
+            <label for="ev_act_chk" class="ev_act_chk">해당 조건에 동의하고 일 수락하기를 신청합니다.</label>
+
+            <button type="button" class="act_next" disabled>신청하기</button>
+        </div>
+    </section>
+</body>
+</html>
+
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+var swiper = new Swiper(".mySwiper", {
+    pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+    },
+    navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+    },
+});
+</script>

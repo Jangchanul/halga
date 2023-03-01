@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <title>할까말까</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script  src="https://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+   	<header>
+   	    <div class="hd_back">
+   	        <a href="javascript:history.back(-1)" class="back"></a>
+   	    </div>
+   	</header>
+    <section id="setup_mod">
+        <div class="inner16">
+            <p class="mod_title">비밀번호 변경</p>
+
+            <div class="sm_cont">
+                <input type="password" class="sm_inp" placeholder="현재 비밀번호를 입력해주세요."></input>
+                <p>*등록되어 있는 전화번호가 아닙니다.</p>
+            </div>
+            <div class="sm_cont">
+                <div class="flex btw">    
+                    <input type="password" class="sm_inp" placeholder="새로운 비밀번호를 입력해주세요."></input>
+                </div>
+                <p>*잘못된 전화번호 입니다.</p>
+            </div>
+            <div class="sm_cont">
+                <div class="flex btw">    
+                    <input type="password" class="sm_inp" placeholder="비밀번호를 한번 더 입력해주세요."></input>
+                </div>
+                <p>*인증번호가 일치하지 않습니다.</p>
+            </div>
+
+            <button type="button" class="sm_submit" onclick="location.href='mod_f2.html'">변경하기</button>
+        </div>
+    </section>
+</body>
+</html>
+

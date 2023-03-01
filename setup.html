@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <title>할까말까</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script  src="https://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/script.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('.set_d_o').click(function(){
+                $('.set_dim').fadein();
+            });
+            $('.set_d_c').click(function(){
+                $('.set_dim').fadeOut();
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <div class="set_dim">
+        <div>
+            <p>캐시 데이터를 삭제 할까요?</p>
+            <ul>
+                <li>확인</li>
+                <li class="set_d_c">취소</li>
+            </ul>
+        </div>
+    </div>
+
+   	<header>
+   	    <div class="hd_back2">
+   	        <a href="javascript:history.back(-1)" class="back"></a>
+            <p class="hd_title">설정</p>
+   	    </div>
+   	</header>
+    <section id="setup">
+        <div class="inner16">
+            <div class="setup_cont">
+                <div class="flex btw">
+                    <p class="setup_t1 mid">채팅 알림</p>
+                    <div class="setup_slide"></div>
+                </div>
+            </div>
+            <div class="setup_cont">
+                <div class="flex btw">
+                    <p class="setup_t1 mid">관심 알림</p>
+                    <div class="setup_slide"></div>
+                </div>
+            </div>
+            <div class="setup_cont">
+                <div class="flex btw">
+                    <p class="setup_t1 mid">활동 알림</p>
+                    <div class="setup_slide"></div>
+                </div>
+            </div>
+            <div class="setup_cont">
+                <div class="flex btw">
+                    <p class="setup_t1 mid">마케팅 정보 수신</p>
+                    <div class="setup_slide"></div>
+                </div>
+            </div>
+            <div class="setup_cont set_d_o">
+                <div class="flex btw">
+                    <p class="setup_t1">캐시 데이터 삭제</p>
+                </div>
+            </div>
+            <div class="setup_cont" onclick="location.href='/sian/app_ber.html'">
+                <div class="flex btw">
+                    <p class="setup_t1">앱 버전</p>
+                </div>
+            </div>
+            <div class="setup_cont">
+                <div class="flex btw">
+                    <p class="setup_t1" onclick="location.href='/sian/mypage.html'">회원정보 확인, 변경</p>
+                </div>
+            </div>
+
+            <button type="button" class="setup_leave">회원 탈퇴</button>
+        </div>
+    </section>
+</body>
+</html>
+

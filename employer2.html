@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <title>할까말까</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script  src="https://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+   	<header>
+   	    <div class="hd_back2">
+   	        <a href="javascript:history.back(-1)" class="back"></a>
+            <p class="hd_title">글쓰기</p>
+   	    </div>
+   	</header>
+    <section id="employer2">
+        <div class="inner16">
+            <p class="empr_txt1">게시할 글의 내용을 입력해주세요.</p>
+            
+            <input type="text" class="empr2_input" placeholder="제목을 입력해주세요.">
+            
+            <div class="empr_ta_box">
+                <p class="empr_c_title fs16">내용</p>
+                <p class="empr2_ta_txt1">* 악성, 범죄등 윤리적으로 어긋나는 요청은 금지합니다.</p>
+                <textarea onkeyup="this.style.height='26px'; this.style.height = this.scrollHeight + 'px';"
+                 placeholder="'누가/언제/어디서/무엇을/어떻게' 에 대한 내용에 맞게 입력해주세요."></textarea>
+            </div>
+
+            <div class="empr2_box">
+                <p class="empr_c_title fs16" style="margin-bottom:3.333vw">사진첨부하기</p>
+                <p class="empr2_ta_txt1">* 10MB이하, 3장까지 업로드 가능합니다.</p>
+                <input type="file" accept="images/*" id="empr2_img_file" style="display:none">
+                <label for="empr2_img_file" class="empr2_img_file">추가하기</label>
+                <div class="empr2_img_box">
+                    <div class="empr2_img">
+                        <button type="button"></button>
+                        <img src="https://via.placeholder.com/104x104" alt="">
+                    </div>
+                    <div class="empr2_img">
+                        <button type="button"></button>
+                        <img src="https://via.placeholder.com/104x104" alt="">
+                    </div>
+                    <div class="empr2_img">
+                        <button type="button"></button>
+                        <img src="https://via.placeholder.com/104x104" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="empr2_box">
+                <p class="empr_c_title fs16" style="margin-bottom:3.333vw">해시태그 등록</p>
+                <button type="button" class="empr2_img_file">추가하기</button>
+                <ul class="empr2_tag_ul">
+                    <li><a href="#">#해시태그1</a></li>
+                    <li><a href="#">#해시태그2</a></li>
+                    <li><a href="#">#해시태그3</a></li>
+                    <li><a href="#">#해시태그4</a></li>
+                    <li><a href="#">#해시태그5</a></li>
+                </ul>
+            </div>
+
+            <button type="button" class="empr1_next" style="margin-top:8.111vw" onclick="location.href='employer2_f.html'">완료</button>
+        </div>
+    </section>
+
+    <footer>
+        <ul class="footer_ul">
+            <li><a href="employee.html">일하기</a></li>
+            <li class="f_active"><a href="employer.html">일 시키기</a></li>
+        </ul>
+    </footer>
+
+    <div class="dim"></div>
+    <div class="empr_tag_alert js">
+        <button type="button">완료</button>
+        <input type="text" placeholder="해시태그를 입력해주세요.">
+        <p>입력된 해시태그</p>
+        <ul>
+            <li><a href="#">#해시태그1</a></li>
+            <li><a href="#">#해시태그2</a></li>
+            <li><a href="#">#해시태그3</a></li>
+            <li><a href="#">#해시태그4</a></li>
+            <li><a href="#">#해시태그5</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>
+
+<script src="js/rolldate.min.js"></script>
+    <script>
+        $(function() {
+            $("#datepicker").datepicker();
+        });
+		new Rolldate({
+			el: '#example1',
+			format: 'MM-DD',
+			beginYear: 1990,
+			endYear: 2100,
+			lang : { 
+			  title : '날짜선택', 
+			  cancel : '취소', 
+			  confirm : '확인', 
+			  month : '월', 
+			  day : '일', 
+			}
+		});
+        new Rolldate({
+			el: '#example2',
+			format: 'hh:mm',
+			minStep:15,
+			lang : { 
+			  title : '시간선택', 
+			  cancel : '취소', 
+			  confirm : '확인', 
+			  hour : '시', 
+			  min : '분',
+			}
+		});
+	</script>
+    <style>
+        section.rolldate-content {padding:0;}
+    </style>

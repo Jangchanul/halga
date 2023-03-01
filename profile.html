@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <title>할까말까</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script  src="https://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="hd_back2">
+            <a href="javascript:history.back(-1)" class="back"></a>
+         <p class="hd_title">회원정보 확인,변경</p>
+        </div>
+    </header>
+    <section class="user_profile">
+        <div class="popup">
+            이메일을 변경하기 위한 인증메일을 발송했습니다. 메일함을 확인해주세요.
+        </div>
+        <div class="pro_top">
+            <figure><img src="./img/user.png" alt=""></figure>
+            <p class="user_name">유저닉네임</p>
+            <p class='user_email'>email@email.com</p>
+        </div>
+        <ul class="pro_mid">
+            <li class="email_change">이메일 변경</li>
+            <div class="certification">
+                <input type="number" placeholder="인증번호 입력">
+                <button>인증하기</button>
+            </div>
+            <li onclick="location.href='password_change.html'">비밀번호 변경</li>
+            <li class="logout">로그아웃</li>
+        </ul>
+        <div class="confirm">
+            <div class="confirm_bg"></div>
+            <div class="confirm_box">
+                <p>로그아웃 하시겠습니까?</p>
+                <div>
+                    <button class="one">확인</button>
+                    <button class="two">취소</button>
+                </div>
+            </div>
+        </div>
+        <div onclick="location.href='email_mod.html'">이메일변경</div>
+    </section>
+    
+</body>
+</html>

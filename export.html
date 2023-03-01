@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <title>할까말까</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script  src="https://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/script.js"></script>
+    <style type="text/css">
+    section#history>.inner16{padding-top: 0;}
+    </style>
+</head>
+
+<body>
+   	<header>
+   	    <div class="hd_back2">
+   	        <a href="javascript:history.back(-1)" class="back"></a>
+            <p class="hd_title">내보내기</p>
+   	    </div>
+   	</header>
+       <section class="export">
+        <p class="ex">출금내역은 이 곳에서 확인 하실 수 있습니다.</p>
+        <div class="ex_top">
+            <p class="title">내 지갑에 있는 돈</p>
+            <div>50,000원</div>
+        </div>
+        <div class="ex_mid">
+            <p>내 지갑에 있는 돈을 출금합니다. 출금할 금액과 돈을 받을 계좌를 입력해주세요.</p>
+            <ul>
+                <li>
+                    <select>
+                        <option checked='checked'>은행을 선택해주세요.</option>
+                        <option>KB국민은행</option>
+                        <option>신한은행</option>
+                        <option>우리은행</option>
+                        <option>하나은행</option>
+                        <option>카카오뱅크</option>
+                        <option>케이뱅크</option>
+                    </select>
+                </li>
+                <li class="second_li">
+                    <input type="number" placeholder="계좌번호를 입력해주세요.">
+                </li>
+                <li class="last_li">
+                    <input type="number" placeholder="출금할 금액을 입력해주세요.">
+                    <button>전액 출금</button>
+                </li>
+            </ul>
+        </div>
+        <button class="next" onclick="location.href='export_confirm.html'">다음</button>
+       </section>
+</body>
+</html>
+

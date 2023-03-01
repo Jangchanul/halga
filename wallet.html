@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <title>할까말까</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <script  src="https://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="./js/script.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <style>
+        .ddre{width: 92%;margin: 0px auto;}
+        .ddre>div{margin-bottom: 5vw;;}
+
+        .vvfd{width: 100%;min-height: 23.888vw;background: #f1f1f5;border-radius: 2.333vw;box-sizing: border-box;padding: 4.444vw;;}
+        .ddre2{border-top: 1px dotted #ccc;}
+        .ddre2 h3{color: #ea4335;}
+
+      </style>
+</head>
+<body>
+   	<header class="hds">
+   	    <div class="hd_back2">
+   	        <a href="javascript:history.back(-1)" class="back"></a>
+            <p class="hd_title">지갑</p>
+   	    </div>
+   	</header>
+    <section class="wallet">
+        <div class="wallet_top">
+            <img src="./img/user.png" alt="">
+            <p>유저 닉네임</p>
+        </div>
+        <div class="wallet_mid">
+            <span>내 지갑에 있는 돈</span>
+            <p>50,000원</p>
+        </div>
+        <ul class="wallet_bot">
+            <li onclick="location.href='wallet_history.html'">
+                <p>지갑 내역 보기</p>
+            </li>
+            <li onclick="location.href='export.html'">
+                <p>지갑에 있는 돈 내보내기</p>
+            </li>
+        </ul>
+    </section>
+</body>
+</html>
+

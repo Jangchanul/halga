@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <title>할까말까</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script  src="https://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="hd_back2">
+            <a href="javascript:history.back(-1)" class="back"></a>
+         <p class="hd_title">일 상세보기</p>
+        </div>
+    </header>
+    <section class="work_info">
+        <div class="mid">
+            <p style="font-size: 4.444vw;font-weight: 500;color: #616161;margin-bottom: 6.667vw;">선택하기</p>
+            <div class="mm">
+                <ul>
+                    <li>
+                        <div>
+                            <figure>
+                                <input type="checkbox" id="ck1" name="ck1">
+                                <label for="ck1"><img src="./img/user.png" alt=""></label>
+                            </figure>
+                            <div>
+                                <p style="font-size: 4.444vw;">유저이름이 표시됩니다.</p>
+                                <p style="color: #999;">employee@email.com</p>
+                                <p style="color: #999;">010-2222-3333</p>
+                            </div>
+                            <!-- <p style="color: #2277f2;font-weight: bold;">진행중</p> -->
+                            <p style="color: #ea4335;font-weight: bold;">완료요청</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <figure>
+                                <input type="checkbox" id="ck2" name="ck1">
+                                <label for="ck2"><img src="./img/user.png" alt=""></label>
+                            </figure>
+                            <div>
+                                <p style="font-size: 4.444vw;">일하는 사람22</p>
+                                <p style="color: #999;">employee@email.com</p>
+                                <p style="color: #999;">010-2222-3333</p>
+                            </div>
+                            <!-- <p style="color: #2277f2;font-weight: bold;">진행중</p> -->
+                            <p style="color: #ea4335;font-weight: bold;">완료요청</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <button class="bt_done" type="button" onclick="location.href='work_info2.html'">선택한 사람 완료처리하기</button>
+    </section>
+</body>
+</html>

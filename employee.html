@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <title>할까말까</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script  src="https://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="hd_top">
+            <div class="hd_logo">
+                <img src="img/logo.png">
+            </div>
+            <div class="menu"><div class="red_dot"></div></div>
+        </div>
+    </header>
+    <section id="main">
+        <div class="inner16">
+            <div class="main_search_box">
+                <input type="text" placeholder="하고 싶은 일을 검색해보세요.">
+                <button type="button" class="search_icon1" onclick="location.href='search.html'"></button>
+            </div>
+
+            <div class="map_cate">
+                <p>현재 설정</p>
+                <div class="select_wrap">
+                    <select>
+                        <option>서울</option>
+                        <option>인천</option>
+                        <option>부산</option>
+                    </select>
+                </div>
+                <div class="select_wrap">
+                    <select>
+                        <option>마포구</option>
+                        <option>영등포구</option>
+                        <option>강동구</option>
+                    </select>
+                </div>
+                <div class="select_wrap">
+                    <select>
+                        <option>서교동</option>
+                        <option>합정동</option>
+                        <option>압구정동</option>
+                    </select>
+                </div>
+
+                <button type="button" class="rocate" onclick="location.href='employer_loc.html'"></button>
+            </div>
+
+            <ul class="main_tab_top" style="border:none">
+                <li class="tab1 tab_active" rel="tab1">
+                    <a href="#">지도로 보기</a>
+                </li>
+                <li class="tab2" rel="tab2">
+                    <a href="#">목록으로 보기</a>
+                </li>
+
+                <div class="select_wrap">
+                    <select>
+                        <option>거리순</option>
+                        <option>등록일</option>
+                        <option>가격</option>
+                        <option>좋아요</option>
+                        <option>댓글</option>
+                    </select>
+                </div>
+            </ul>
+
+            <div class="est_tab" style="overflow:hidden;height:100%;position:relative;">
+                <div id="tab1" class="tab_content">
+                    <img src="img/map_img.png">
+                </div><!------------------------------------------------------------------------------------tab1----->
+                
+                <div id="tab2" class="tab_content" style="display:none;">
+                    <ul class="main_tab2_ul">
+                        <li onclick="location.href='employee_view.html'">
+                            <div class="flex btw">
+                                <p class="distance"><span>500</span>m</p>
+                                <p class="apply"><span>0</span>/<span>1</span></p>
+                            </div>
+
+                            <div class="flex btw">
+                                <div class="mt2_left">
+                                    <p class="mt2_title">언니들! 친구집인척 함께 사용한 후기입니다</p>
+                                    <p class="mt2_charge"><span>10,000</span>&nbsp;&nbsp;₩</p>
+                                    <ul class="mt2_tag">
+                                        <li>#해시태그1</li>
+                                        <li>#해시태그2</li>
+                                        <li>#해시태그3</li>
+                                        <li>#해시태그4</li>
+                                        <li>#해시태그5</li>
+                                    </ul>
+                                </div>
+                                <div class="mt2_right">
+                                    <div class="mt2_img"></div>
+                                    <div class="mt2_comment_box">
+                                        <div class="mt2_like"><span></span>84</div>
+                                        <div class="mt2_comment"><span></span>12</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li onclick="location.href='employee_view.html'">
+                            <div class="flex btw">
+                                <p class="distance"><span>500</span>m</p>
+                                <p class="apply"><span>0</span>/<span>1</span></p>
+                            </div>
+
+                            <div class="flex btw">
+                                <div class="mt2_left">
+                                    <p class="mt2_title">언니들! 친구집인척 함께 사용한 후기입니다</p>
+                                    <p class="mt2_charge"><span>10,000</span>&nbsp;&nbsp;₩</p>
+                                    <ul class="mt2_tag">
+                                        <li>#해시태그1</li>
+                                        <li>#해시태그2</li>
+                                        <li>#해시태그3</li>
+                                        <li>#해시태그4</li>
+                                        <li>#해시태그5</li>
+                                    </ul>
+                                </div>
+                                <div class="mt2_right">
+                                    <div class="mt2_img"></div>
+                                    <div class="mt2_comment_box">
+                                        <div class="mt2_like"><span></span>84</div>
+                                        <div class="mt2_comment"><span></span>12</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li onclick="location.href='employee_view.html'">
+                            <div class="flex btw">
+                                <p class="distance"><span>500</span>m</p>
+                                <p class="apply"><span>0</span>/<span>1</span></p>
+                            </div>
+
+                            <div class="flex btw">
+                                <div class="mt2_left">
+                                    <p class="mt2_title">언니들! 친구집인척 함께 사용한 후기입니다</p>
+                                    <p class="mt2_charge"><span>10,000</span>&nbsp;&nbsp;₩</p>
+                                    <ul class="mt2_tag">
+                                        <li>#해시태그1</li>
+                                        <li>#해시태그2</li>
+                                        <li>#해시태그3</li>
+                                        <li>#해시태그4</li>
+                                        <li>#해시태그5</li>
+                                    </ul>
+                                </div>
+                                <div class="mt2_right">
+                                    <div class="mt2_img"></div>
+                                    <div class="mt2_comment_box">
+                                        <div class="mt2_like"><span></span>84</div>
+                                        <div class="mt2_comment"><span></span>12</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <ul class="footer_ul">
+            <li class="f_active"><a href="employee.html">일하기</a></li>
+            <li><a href="employer1.html">일 시키기</a></li>
+        </ul>
+    </footer>
+
+    <div class="ham_dim"></div>
+    <div class="ham_slide"><!-------------------------------------------------------------------Ham_menu------------------------------------------------>
+        <div class="flex btw">
+            <div class="ham_alarm" onclick="location.href='alarm.html'">
+                <div class="red_dot"></div>
+            </div>
+            <div class="ham_menu">
+                <div class="red_dot"></div>
+            </div>
+        </div>
+
+        <div class="ham_inner">
+            <div class="h1_box">
+                <button type="button" class="ham_h1" onclick="location.href='chat_list.html'">채팅</button>
+                <button type="button" class="ham_h1" onclick="location.href='board_list.html'">자유게시판</button>
+            </div>
+
+            <div class="ham_user_img">
+                <div class="ham_img_box"><img src="img/ham_img.png"></div>
+                <p class="ham_user_id">김옥자</p>
+            </div>
+
+            <ul class="ham_ul1">
+                <li onclick="location.href='jjim.html'">
+                    <p>찜</p>
+                </li>
+                <li onclick="location.href='wallet.html'">
+                    <p>지갑</p>
+                </li>
+                <li onclick="location.href='my_work.html'">
+                    내 일 내역
+                </li>
+                <li onclick="location.href='write_history.html'">
+                    내 작성 내역
+                </li>
+            </ul>
+            <ul class="ham_ul1">
+                <li onclick="location.href='setup.html'">설정</li>
+                <li>공지사항</li>
+                <li onclick="location.href='qna-report.html'">문의 및 신고</li>
+            </ul>
+            <ul class="ham_ul2">
+                <li onclick="location.href='clause.html'">서비스 이용약관</li>
+                <li onclick="location.href='per_info.html'">개인정보 취급방침</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+

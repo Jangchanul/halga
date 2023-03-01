@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <title>할까말까</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script  src="https://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="hd_back2">
+            <a href="javascript:history.back(-1)" class="back"></a>
+         <p class="hd_title">내보내기</p>
+        </div>
+    </header>
+    <section class="export_confirm">
+        <p class="title">아래 내용을 확인하고, 이상이 없으시다면 <b style="color: #EA4335;">동의 후 출금하기</b> 버튼을 눌러주세요.</p>
+        <ul>
+            <li style="color:#616161;border-bottom: 1px solid #ccc;">
+                <p>출금은행</p>
+                <p>카카오 뱅크</p>
+            </li>
+            <li style="font-weight: 500;">
+                <p>출금금액</p>
+                <p>50,000원</p>
+            </li>
+        </ul>
+        <div>
+            <input type="checkbox" id="ck1">
+            <label for="ck1">상기 내용에 이상이 없음을 확인했습니다.</label>
+        </div>
+        <button onclick="location.href='export_done.html'">출금하기</button>
+    </section>
+</body>
+</html>
