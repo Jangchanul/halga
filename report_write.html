@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <title>할까말까</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script  src="https://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+   	<header>
+   	    <div class="hd_back2">
+   	        <a href="javascript:history.back(-1)" class="back"></a>
+            <p class="hd_title">신고하기</p>
+   	    </div>
+   	</header>
+    <section class="report_write">
+        <p class="info">신고내역은 이 곳에서 확인할 수 있습니다.</p>
+        <ul>
+            <li>
+                <p>유형선택</p>
+                <select>
+                    <option selected='selected'>신고할 유형을 선택해주세요.</option>
+                    <option>사기,거짓</option>
+                </select>
+            </li>
+            <li>
+                <p>신고할 회원의 이메일</p>
+                <input type="email" placeholder="신고할 유저의 이메일을 입력해주세요.">
+            </li>
+        </ul>
+        <div class="write">
+            <p>사고경위를 작성해주세요.</p>
+            <p>원활한 조치를 위해 최대한 자세히 작성해주시길 바랍니다.</p>
+        </div>
+        <div class="img">
+            <p>사진첨부하기</p>
+            <p class="guide">10MB이해,3장까지 업로드 가능합니다.</p>
+            <div class="img_container">
+                <img src="./img/img_plus.png" alt="">
+                <img src="./img/rep1.png" alt="">
+                <img src="./img/rep1.png" alt="">
+                <img src="./img/rep1.png" alt="">
+            </div>
+        </div>
+        <div class="bot">
+            <p class="strong">확인해주세요.</p>
+            <p class="small">앱 이용에 문제가 생겼을 시, 문의 및 신고하기에 글을 작성해주세요. 원활한 업무처리를 위해 사실 그대로 자세히 작성해주시길 바랍니다.</p>
+            <p class="ps">사건 처리에는 1-2주가 소요됩니다.</p>
+        </div>
+        <button onclick="location.href='report_done.html'">신고하기</button>
+    </section>
+</body>
+</html>
+
